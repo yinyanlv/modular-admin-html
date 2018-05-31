@@ -13,8 +13,8 @@ $(function() {
 	    },
 	    messages: {
 	        email1: {
-	            required: "Please enter email address",
-	            email: "Please enter a valid email address"
+	            required: "请输入邮箱",
+	            email: "您输入的邮箱地址格式不正确"
 	        }
 	    },
 	    invalidHandler: function() {

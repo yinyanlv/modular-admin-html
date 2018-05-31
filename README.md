@@ -1,4 +1,4 @@
-# ModularAdmin: Free Bootstrap 4 Dashboard Theme <br> HTML version
+# Servision: Free Bootstrap 4 Dashboard Theme <br> HTML version
 
 [![Backers on Open Collective](https://opencollective.com/modular-admin/backers/badge.svg)](#backers) [![Sponsors on Open Collective](https://opencollective.com/modular-admin/sponsors/badge.svg)](#sponsors) [![Join the chat at https://gitter.im/modularcode/modular-admin](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/modularcode/modular-admin?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
@@ -10,10 +10,10 @@
   </strong>
 </p>
 
-**[ModularAdmin](http://modularcode.github.io/modular-admin-html/)** is an open source **dashboard theme** built in a modular way. That makes it easy to scale, modify and maintain. This project is proudly supported by <a href="https://screenful.com/?utm_source=modularadmin&utm_campaign=modularadmin" target="_blank">Agile Metrics by Screenful</a> (*instant visual <a href="https://screenful.com/dashboard-for-trello/?utm_source=modularadmin&utm_campaign=modularadmin" target="_blank">dashboards for Trello</a> | <a href="https://screenful.com/dashboard-for-jira/?utm_source=modularadmin&utm_campaign=modularadmin" target="_blank">Jira</a> | <a href="https://screenful.com/dashboard-for-asana/?utm_source=modularadmin&utm_campaign=modularadmin" target="_blank">Asana</a> | <a href="https://screenful.com/dashboard-for-pivotal-tracker/?utm_source=modularadmin&utm_campaign=modularadmin" target="_blank">Pivotal Tracker</a> | <a href="https://screenful.com/dashboard-for-github/?utm_source=modularadmin&utm_campaign=modularadmin" target="_blank">Github</a>*)
+**[Servision](http://modularcode.github.io/modular-admin-html/)** is an open source **dashboard theme** built in a modular way. That makes it easy to scale, modify and maintain. This project is proudly supported by <a href="https://screenful.com/?utm_source=modularadmin&utm_campaign=modularadmin" target="_blank">Agile Metrics by Screenful</a> (*instant visual <a href="https://screenful.com/dashboard-for-trello/?utm_source=modularadmin&utm_campaign=modularadmin" target="_blank">dashboards for Trello</a> | <a href="https://screenful.com/dashboard-for-jira/?utm_source=modularadmin&utm_campaign=modularadmin" target="_blank">Jira</a> | <a href="https://screenful.com/dashboard-for-asana/?utm_source=modularadmin&utm_campaign=modularadmin" target="_blank">Asana</a> | <a href="https://screenful.com/dashboard-for-pivotal-tracker/?utm_source=modularadmin&utm_campaign=modularadmin" target="_blank">Pivotal Tracker</a> | <a href="https://screenful.com/dashboard-for-github/?utm_source=modularadmin&utm_campaign=modularadmin" target="_blank">Github</a>*)
 
 
-#### Heads up for the ModularAdmin v2!
+#### Heads up for the Servision v2!
 We're working hard on version 2, which is a complete rewrite. 
 <a href="https://modular-admin-html.modularcode.io/" target="_blank">V2 demo</a> | <a href="https://github.com/modularcode/modular-admin-html/tree/v2-dev" >V2 code</a> <br>
 **Please consider [supporting us](#support-us) to make this happen!**

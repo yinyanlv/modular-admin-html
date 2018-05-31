@@ -7,19 +7,17 @@ $(function() {
     var loginValidationSettings = {
 	    rules: {
 	        username: {
-	            required: true,
-	            email: true
+	            required: true
 	        },
 	        password: "required",
 	        agree: "required"
 	    },
 	    messages: {
 	        username: {
-	            required: "Please enter username",
-	            email: "Please enter a valid email address"
+	            required: "请输入用户名"
 	        },
-	        password:  "Please enter password",
-	        agree: "Please accept our policy"
+	        password:  "请输入密码",
+	        agree: "请同意我们的条款"
 	    },
 	    invalidHandler: function() {
 			animate({

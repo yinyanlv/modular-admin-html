@@ -6,10 +6,7 @@ $(function() {
 
     var signupValidationSettings = {
 	    rules: {
-	    	firstname: {
-	    		required: true,
-	    	},
-	    	lastname: {
+			username: {
 	    		required: true,
 	    	},
 	        email: {
@@ -30,21 +27,12 @@ $(function() {
 			}
 	    },
 	    groups: {
-	    	name: "firstname lastname",
 			pass: "password retype_password",
 		},
 		errorPlacement: function(error, element) {
 			if (
-				element.attr("name") == "firstname" || 
-				element.attr("name") == "lastname" 
-			) {
-				error.insertAfter($("#lastname").closest('.row'));
-				element.parents("div.form-group")
-				.addClass('has-error');
-			} 
-			else if (
-				element.attr("name") == "password" || 
-				element.attr("name") == "retype_password" 
+				element.attr("name") == "password" ||
+				element.attr("name") == "retype_password"
 			) {
 				error.insertAfter($("#retype_password").closest('.row'));
 				element.parents("div.form-group")
@@ -58,21 +46,20 @@ $(function() {
 			}
 		},
 	    messages: {
-	    	firstname: "Please enter firstname and lastname",
-	    	lastname: "Please enter firstname and lastname",
+	    	username: "请输入用户名",
 	        email: {
-	            required: "Please enter email",
-	            email: "Please enter a valid email address"
+	            required: "请输入邮箱",
+	            email: "您输入的邮箱地址格式不正确"
 	        },
 	        password: {
-	        	required: "Please enter password fields.",
-	        	minlength: "Passwords should be at least 8 characters."
+	        	required: "请输入密码",
+	        	minlength: "密码最少包含8个字符"
 	        },
 	        retype_password: {
-	        	required: "Please enter password fields.",
-	        	minlength: "Passwords should be at least 8 characters."
+	        	required: "请输入密码",
+	        	minlength: "密码最少包含8个字符"
 	        },
-	        agree: "Please accept our policy"
+	        agree: "请同意条款和政策"
 	    },
 	    invalidHandler: function() {
 			animate({

@@ -5,19 +5,20 @@ $(function () {
 	});
 
 
-	$('#sidebar-collapse-btn').on('click', function(event){
-		event.preventDefault();
-		
-		$("#app").toggleClass("sidebar-open");
-	});
-
-	$("#sidebar-overlay").on('click', function() {
-		$("#app").removeClass("sidebar-open");
-	});
-
 	if ($.browser.mobile) {
 		var $appContainer = $('#app ');
 		var $mobileHandle = $('#sidebar-mobile-menu-handle ');
+
+		$('#sidebar-collapse-btn').on('click', function(event){
+			event.preventDefault();
+
+			$("#app").toggleClass("sidebar-open");
+		});
+
+		$("#sidebar-overlay").on('click', function() {
+			$("#app").removeClass("sidebar-open");
+		});
+
 
 		$mobileHandle.swipe({
 			swipeLeft: function() {
@@ -32,6 +33,12 @@ $(function () {
 			},
 			// excludedElements: "button, input, select, textarea, .noSwipe, table", 
 			triggerOnTouchEnd: false
+		});
+	} else {
+
+		$('#sidebar-collapse-btn').on('click', function () {
+
+			$('#app').toggleClass('sidebar-collapsed');
 		});
 	}
 	

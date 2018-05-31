@@ -1,10 +1,11 @@
 .sidebar-header {
 	.brand {
 		color: #fff;
-		text-align: left;
-		padding-left: 25px;
+		text-align: center;
 		line-height: $header-height;
+		height: $header-height;
 		font-size: 16px;
+		background: #fff;
 		
 		@include media-down(sm) {
 			line-height: $header-height-xs;

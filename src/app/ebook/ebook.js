@@ -1,33 +1,50 @@
+var ebookBasePath = './assets/modules/维修手册DEMO/HTML/';
+var ebookData = [
+	{
+		text: '电气系统',
+		data: ebookBasePath + "wsmbookmapCJG08.htm",
+		id: 1,
+		state: {"opened": true, "selected": true},
+		children: [{
+			"text": "喇叭",
+			"state": {"opened": true},
+			id: 2,
+			data: ebookBasePath + "wsmbookmapCJG08-1.htm",
+			"children": [
+				{"text": "概述", "data": ebookBasePath + "4.4.1喇叭_概述.htm", "type": "file", id: 3},
+				{"text": "说明与操作", "data": ebookBasePath + "4.4.1喇叭_说明与操作.htm", "type": "file", id: 4},
+				{"text": "部件位置图", "data": ebookBasePath + "4.4.1喇叭_部件位置图.htm", "type": "file", id: 5},
+				{"text": "电路图", "data": ebookBasePath + "4.4.1喇叭_电路图.htm", "type": "file", id: 6},
+				{"text": "诊断与测试", "data": ebookBasePath + "4.4.1喇叭_诊断与测试.htm", "type": "file", id: 7},
+				{"text": "拆卸与安装", "data": ebookBasePath + "4.4.1喇叭_拆卸与安装.htm", "type": "file", id: 8}
+			]
+		},
+			{
+				"text": "仪表及音响娱乐系统",
+				"state": {"opened": true},
+				id: 9,
+				data: ebookBasePath + "wsmbookmapCJG08-2.htm",
+				"children": [
+					{"text": "规格", "data": ebookBasePath + "4.5.1仪表及音响娱乐系统_规格.htm", "type": "file", id: 10},
+					{"text": "说明与操作", "data": ebookBasePath + "4.5.1仪表及音响娱乐系统_说明与操作.htm", "type": "file", id: 11},
+					{"text": "电路图", "data": ebookBasePath + "4.5.1仪表及音响娱乐系统_电路图.htm", "type": "file", id: 12},
+					{"text": "诊断与测试", "data": ebookBasePath + "4.5.1仪表及音响娱乐系统_诊断与测试.htm", "type": "file", id: 13},
+					{"text": "拆卸与安装", "data": ebookBasePath + "4.5.1仪表及音响娱乐系统_拆卸与安装.htm", "type": "file", id: 14}
+				]
+			}]
+	}
+];
+
 // ebook
 $(function () {
 	var $iframe = $('#ebook-iframe');
 	var $tree = $('#ebook-catalog').jstree({
 		"core": {
+			"multiple": false,
 			"animation": 0,
 			"check_callback": true,
 			"themes": {"stripes": true},
-			'data': [
-				{
-					"text": "Root node1",
-					"state": {"opened": true},
-					"children": [
-						{"text": "Child node 1", "data": "http://www.jd.com", "type": "file"},
-						{"text": "Child node 2", "data": "http://www.baidu.com", "type": "file"}
-					]
-				},
-				{
-					"text": "Root node2",
-					"state": {"opened": true},
-					"children": [
-						{
-							"text": "Child node 1",
-							"children": [{"text": "Child node 1", "data": "http://www.jd.com", "type": "file"},
-								{"text": "Child node 2", "data": "http://www.baidu.com", "type": "file"}]
-						},
-						{"text": "Child node 2", "data": "http://www.taobao.com", "type": "file"}
-					]
-				}
-			]
+			'data': ebookData
 		},
 		"types": {
 			"default": {

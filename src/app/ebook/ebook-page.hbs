@@ -2,29 +2,29 @@
 layout: app/app-layout
 pagename: ebook
 ---
-<div class="title-block">
-	<h3 class="title">
-		Charts Flot 
-	</h3>
-	<p class="title-description">
-		List of sample charts with custom colors
-	</p>
-</div>
+<nav aria-label="breadcrumb" class="app-breadcrumb">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item"><a href="ebook.html">维修手册</a></li>
+    <li class="breadcrumb-item active" aria-current="page">维修手册2334AB</li>
+  </ol>
+</nav>
 
-<section class="section ebook-layout">
+<section class="section main-container">
   <div class="ebook-wrapper">
     <div class="catalog-wrapper">
-      <div class="catalog-inner-wrapper">
-        <div class="catalog" id="ebook-catalog"></div>
+      <div class="catalog-header">
+        <h3>目录列表</h3>
+        <div class="catalog-options">
+          <button type="button" class="btn btn-sm btn-secondary" id="btn-open-all"><i class="fa fa-expand"></i> 全部展开</button>
+          <button type="button" class="btn btn-sm btn-secondary" id="btn-close-all"><i class="fa fa-compress"></i> 全部收起</button>
+        </div>
+      </div>
+      <div class="catalog-list-wrapper">
+        <div class="catalog-list" id="ebook-catalog"></div>
       </div>
     </div>
     <div class="content-wrapper">
-      <div class="content-inner-wrapper">
-        <iframe frameborder="no" border="0">
-
-        </iframe>
-      </div>
+      <iframe src="https://www.baidu.com/" frameborder="no" border="0" id="ebook-iframe"></iframe>
     </div>
   </div>
-
 </section>

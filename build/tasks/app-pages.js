@@ -36,7 +36,6 @@ module.exports.task = function(gulp, plugins, paths) {
 		bustCache: true,
 	});
 
-
 	gulp.src(paths.app.pages)
 		// Render pages
 		.pipe(through.obj(function (file, enc, cb) {

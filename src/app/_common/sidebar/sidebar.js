@@ -1,7 +1,8 @@
 $(function () {
 
 	$('#sidebar-menu, #customize-menu').metisMenu({
-		activeClass: 'open'
+		activeClass: 'open',
+		toggle: false
 	});
 
 
@@ -23,7 +24,7 @@ $(function () {
 		$mobileHandle.swipe({
 			swipeLeft: function() {
 				if($appContainer.hasClass("sidebar-open")) {
-					$appContainer.removeClass("sidebar-open");	
+					$appContainer.removeClass("sidebar-open");
 				}
 			},
 			swipeRight: function() {
@@ -31,7 +32,7 @@ $(function () {
 					$appContainer.addClass("sidebar-open");
 				}
 			},
-			// excludedElements: "button, input, select, textarea, .noSwipe, table", 
+			// excludedElements: "button, input, select, textarea, .noSwipe, table",
 			triggerOnTouchEnd: false
 		});
 	} else {
@@ -41,5 +42,5 @@ $(function () {
 			$('#app').toggleClass('sidebar-collapsed');
 		});
 	}
-	
+
 });

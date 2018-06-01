@@ -25,19 +25,20 @@ config.validations = {
 	highlight: function(element, errorClass, validClass) {
 		$(element).parents("div.form-group")
 		.addClass(errorClass)
-		.removeClass(validClass); 
-	}, 
+		.removeClass(validClass);
+	},
 
 	// add error class
 	unhighlight: function(element, errorClass, validClass) {
 		$(element).parents(".has-error")
 		.removeClass(errorClass)
-		.addClass(validClass); 
+		.addClass(validClass);
 	},
 
 	// submit handler
     submitHandler: function(form) {
-        form.submit();
+        // form.submit();
+		window.location.href = 'index.html';
     }
 }
 

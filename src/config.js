@@ -38,7 +38,7 @@ config.validations = {
 	// submit handler
     submitHandler: function(form) {
         // form.submit();
-		window.location.href = 'index.html';
+		window.location.href = 'selector.html';
     }
 }
 

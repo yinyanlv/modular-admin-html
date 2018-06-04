@@ -4,6 +4,12 @@
       <nav class="menu">
         <ul class="sidebar-menu metismenu" id="sidebar-menu">
 
+          <li {{#is pagename "===" "epc"}}class="active"{{/is}} >
+            <a href="epc.html">
+              <i class="fa fa-paper-plane-o"></i> 电子配件目录（EPC）
+            </a>
+          </li>
+
           <li {{#is pagename "===" "dashboard"}}class="active"{{/is}} >
             <a href="index.html">
               <i class="fa fa-photo"></i> 电路图册
@@ -31,12 +37,6 @@
           <li {{#is pagename "===" "special-tools"}}class="active"{{/is}} >
             <a href="special-tools.html">
               <i class="fa fa-briefcase"></i> 专用工具
-            </a>
-          </li>
-
-          <li {{#is pagename "===" "epc"}}class="active"{{/is}} >
-            <a href="epc.html">
-              <i class="fa fa-paper-plane-o"></i> 电子配件目录（EPC）
             </a>
           </li>
 

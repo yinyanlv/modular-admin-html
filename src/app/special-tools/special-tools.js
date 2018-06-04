@@ -1,50 +1,27 @@
-var ebookBasePath = './assets/modules/service-manual/HTML/';
-var ebookData = [
-	{
-		text: '电气系统',
-		data: ebookBasePath + "wsmbookmapCJG08.htm",
-		id: 1,
-		state: {"opened": true, "selected": true},
-		children: [{
-			"text": "喇叭",
-			"state": {"opened": true},
-			id: 2,
-			data: ebookBasePath + "wsmbookmapCJG08-1.htm",
-			"children": [
-				{"text": "概述", "data": ebookBasePath + "4.4.1喇叭_概述.htm", "type": "file", id: 3},
-				{"text": "说明与操作", "data": ebookBasePath + "4.4.1喇叭_说明与操作.htm", "type": "file", id: 4},
-				{"text": "部件位置图", "data": ebookBasePath + "4.4.1喇叭_部件位置图.htm", "type": "file", id: 5},
-				{"text": "电路图", "data": ebookBasePath + "4.4.1喇叭_电路图.htm", "type": "file", id: 6},
-				{"text": "诊断与测试", "data": ebookBasePath + "4.4.1喇叭_诊断与测试.htm", "type": "file", id: 7},
-				{"text": "拆卸与安装", "data": ebookBasePath + "4.4.1喇叭_拆卸与安装.htm", "type": "file", id: 8}
-			]
-		},
-			{
-				"text": "仪表及音响娱乐系统",
-				"state": {"opened": true},
-				id: 9,
-				data: ebookBasePath + "wsmbookmapCJG08-2.htm",
-				"children": [
-					{"text": "规格", "data": ebookBasePath + "4.5.1仪表及音响娱乐系统_规格.htm", "type": "file", id: 10},
-					{"text": "说明与操作", "data": ebookBasePath + "4.5.1仪表及音响娱乐系统_说明与操作.htm", "type": "file", id: 11},
-					{"text": "电路图", "data": ebookBasePath + "4.5.1仪表及音响娱乐系统_电路图.htm", "type": "file", id: 12},
-					{"text": "诊断与测试", "data": ebookBasePath + "4.5.1仪表及音响娱乐系统_诊断与测试.htm", "type": "file", id: 13},
-					{"text": "拆卸与安装", "data": ebookBasePath + "4.5.1仪表及音响娱乐系统_拆卸与安装.htm", "type": "file", id: 14}
-				]
-			}]
-	}
+var specialToolsBasePath = './assets/modules/special-tools/';
+var specialTools = [
+	{"text": "绝缘手套", "data": specialToolsBasePath + "绝缘手套.htm", "type": "file", 	state: {"selected": true}},
+	{"text": "镜面抛光撬板", "data": specialToolsBasePath + "镜面抛光撬板.htm", "type": "file"},
+	{"text": "绝缘安全鞋", "data": specialToolsBasePath + "绝缘安全鞋.htm", "type": "file"},
+	{"text": "绝缘胶垫", "data": specialToolsBasePath + "绝缘胶垫.htm", "type": "file"},
+	{"text": "绒布胶带", "data": specialToolsBasePath + "绒布胶带.htm", "type": "file"},
+	{"text": "绝缘十字螺丝批", "data": specialToolsBasePath + "绝缘十字螺丝批.htm", "type": "file"},
+	{"text": "绝缘剥线钳", "data": specialToolsBasePath + "绝缘剥线钳.htm", "type": "file"},
+	{"text": "绝缘斜嘴钳", "data": specialToolsBasePath + "绝缘斜嘴钳.htm", "type": "file"},
+	{"text": "绝缘快速脱落棘轮", "data": specialToolsBasePath + "绝缘快速脱落棘轮.htm", "type": "file"},
+	{"text": "绝缘公制六角", "data": specialToolsBasePath + "绝缘公制六角.htm", "type": "file"}
 ];
 
 // ebook
 $(function () {
-	var $iframe = $('#ebook-iframe');
-	var $tree = $('#ebook-catalog').jstree({
+	var $iframe = $('#ebook-iframe-special-tools');
+	var $tree = $('#ebook-catalog-special-tools').jstree({
 		"core": {
 			"multiple": false,
 			"animation": 0,
 			"check_callback": true,
 			"themes": {"stripes": true},
-			'data': ebookData
+			'data': specialTools
 		},
 		"types": {
 			"default": {

@@ -1,50 +1,52 @@
-var ebookBasePath = './assets/modules/service-manual/HTML/';
-var ebookData = [
-	{
-		text: '电气系统',
-		data: ebookBasePath + "wsmbookmapCJG08.htm",
-		id: 1,
-		state: {"opened": true, "selected": true},
-		children: [{
-			"text": "喇叭",
+var hoursManualBasePath = './assets/modules/hours-manual/';
+var hoursManualData = [{
+	text: '电器',
+	data: hoursManualBasePath + "工时目录.htm",
+	state: {"opened": true, "selected": true},
+	children: [{
+		"text": "信号装置",
+		"state": {"opened": true},
+		data: hoursManualBasePath + "工时目录-1.htm",
+		"children": [{
+			"text": "高音电喇叭",
 			"state": {"opened": true},
-			id: 2,
-			data: ebookBasePath + "wsmbookmapCJG08-1.htm",
+			data: hoursManualBasePath + "高音电喇叭.htm",
 			"children": [
-				{"text": "概述", "data": ebookBasePath + "4.4.1喇叭_概述.htm", "type": "file", id: 3},
-				{"text": "说明与操作", "data": ebookBasePath + "4.4.1喇叭_说明与操作.htm", "type": "file", id: 4},
-				{"text": "部件位置图", "data": ebookBasePath + "4.4.1喇叭_部件位置图.htm", "type": "file", id: 5},
-				{"text": "电路图", "data": ebookBasePath + "4.4.1喇叭_电路图.htm", "type": "file", id: 6},
-				{"text": "诊断与测试", "data": ebookBasePath + "4.4.1喇叭_诊断与测试.htm", "type": "file", id: 7},
-				{"text": "拆卸与安装", "data": ebookBasePath + "4.4.1喇叭_拆卸与安装.htm", "type": "file", id: 8}
+				{"text": "拆装步骤", "data": hoursManualBasePath + "高音电喇叭拆装步骤.htm", "type": "file"}
 			]
-		},
-			{
-				"text": "仪表及音响娱乐系统",
-				"state": {"opened": true},
-				id: 9,
-				data: ebookBasePath + "wsmbookmapCJG08-2.htm",
-				"children": [
-					{"text": "规格", "data": ebookBasePath + "4.5.1仪表及音响娱乐系统_规格.htm", "type": "file", id: 10},
-					{"text": "说明与操作", "data": ebookBasePath + "4.5.1仪表及音响娱乐系统_说明与操作.htm", "type": "file", id: 11},
-					{"text": "电路图", "data": ebookBasePath + "4.5.1仪表及音响娱乐系统_电路图.htm", "type": "file", id: 12},
-					{"text": "诊断与测试", "data": ebookBasePath + "4.5.1仪表及音响娱乐系统_诊断与测试.htm", "type": "file", id: 13},
-					{"text": "拆卸与安装", "data": ebookBasePath + "4.5.1仪表及音响娱乐系统_拆卸与安装.htm", "type": "file", id: 14}
-				]
-			}]
-	}
-];
+		}, {
+			"text": "低音电喇叭",
+			"state": {"opened": true},
+			data: hoursManualBasePath + "低音电喇叭.htm",
+			"children": [
+				{"text": "拆装步骤", "data": hoursManualBasePath + "低音电喇叭拆装步骤.htm", "type": "file"}
+			]
+		}]
+	}, {
+		"text": "仪表装置",
+		"state": {"opened": true},
+		data: hoursManualBasePath + "工时目录-2.htm",
+		"children": [{
+			"text": "组合仪表",
+			"state": {"opened": true},
+			data: hoursManualBasePath + "组合仪表.htm",
+			"children": [
+				{"text": "拆装步骤", "data": hoursManualBasePath + "组合仪表拆装步骤.htm", "type": "file"}
+			]
+		}]
+	}]
+}];
 
 // ebook
 $(function () {
-	var $iframe = $('#ebook-iframe');
-	var $tree = $('#ebook-catalog').jstree({
+	var $iframe = $('#ebook-iframe-hours-manual');
+	var $tree = $('#ebook-catalog-hours-manual').jstree({
 		"core": {
 			"multiple": false,
 			"animation": 0,
 			"check_callback": true,
 			"themes": {"stripes": true},
-			'data': ebookData
+			'data': hoursManualData
 		},
 		"types": {
 			"default": {

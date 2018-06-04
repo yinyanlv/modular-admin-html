@@ -1,4 +1,4 @@
-var ebookBasePath = './assets/modules/维修手册DEMO/HTML/';
+var ebookBasePath = './assets/modules/service-manual/HTML/';
 var ebookData = [
 	{
 		text: '电气系统',

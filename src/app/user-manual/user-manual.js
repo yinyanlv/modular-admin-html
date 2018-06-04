@@ -1,38 +1,11 @@
-var userManualBasePath = './assets/modules/service-manual/HTML/';
+var userManualBasePath = './assets/modules/user-manual/';
 var userManualData = [
-	{
-		text: '电气系统',
-		data: userManualBasePath + "wsmbookmapCJG08.htm",
-		id: 1,
-		state: {"opened": true, "selected": true},
-		children: [{
-			"text": "喇叭",
-			"state": {"opened": true},
-			id: 2,
-			data: userManualBasePath + "wsmbookmapCJG08-1.htm",
-			"children": [
-				{"text": "概述", "data": userManualBasePath + "4.4.1喇叭_概述.htm", "type": "file", id: 3},
-				{"text": "说明与操作", "data": userManualBasePath + "4.4.1喇叭_说明与操作.htm", "type": "file", id: 4},
-				{"text": "部件位置图", "data": userManualBasePath + "4.4.1喇叭_部件位置图.htm", "type": "file", id: 5},
-				{"text": "电路图", "data": userManualBasePath + "4.4.1喇叭_电路图.htm", "type": "file", id: 6},
-				{"text": "诊断与测试", "data": userManualBasePath + "4.4.1喇叭_诊断与测试.htm", "type": "file", id: 7},
-				{"text": "拆卸与安装", "data": userManualBasePath + "4.4.1喇叭_拆卸与安装.htm", "type": "file", id: 8}
-			]
-		},
-			{
-				"text": "仪表及音响娱乐系统",
-				"state": {"opened": true},
-				id: 9,
-				data: userManualBasePath + "wsmbookmapCJG08-2.htm",
-				"children": [
-					{"text": "规格", "data": userManualBasePath + "4.5.1仪表及音响娱乐系统_规格.htm", "type": "file", id: 10},
-					{"text": "说明与操作", "data": userManualBasePath + "4.5.1仪表及音响娱乐系统_说明与操作.htm", "type": "file", id: 11},
-					{"text": "电路图", "data": userManualBasePath + "4.5.1仪表及音响娱乐系统_电路图.htm", "type": "file", id: 12},
-					{"text": "诊断与测试", "data": userManualBasePath + "4.5.1仪表及音响娱乐系统_诊断与测试.htm", "type": "file", id: 13},
-					{"text": "拆卸与安装", "data": userManualBasePath + "4.5.1仪表及音响娱乐系统_拆卸与安装.htm", "type": "file", id: 14}
-				]
-			}]
-	}
+	{"text": "内部概览", "data": userManualBasePath + "DMCJG20OM000008 内部概览.htm", "type": "file", state: {"selected": true}},
+	{"text": "方向盘", "data": userManualBasePath + "DMCJG200OM000014 方向盘.htm", "type": "file"},
+	{"text": "车门", "data": userManualBasePath + "DMCJG20OM000009 车门.htm", "type": "file"},
+	{"text": "车窗", "data": userManualBasePath + "DMCJG20OM000010 车窗.htm", "type": "file"},
+	{"text": "空调系统", "data": userManualBasePath + "DMCJG20OM000004 空调系统.htm", "type": "file"},
+	{"text": "关于路边救援", "data": userManualBasePath + "DMCJG20OM000016 关于路边救援.htm", "type": "file"}
 ];
 
 // ebook

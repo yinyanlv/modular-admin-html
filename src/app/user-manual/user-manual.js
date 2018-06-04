@@ -1,11 +1,11 @@
 var userManualBasePath = './assets/modules/user-manual/';
 var userManualData = [
-	{"text": "内部概览", "data": userManualBasePath + "DMCJG20OM000008 内部概览.htm", "type": "file", state: {"selected": true}},
-	{"text": "方向盘", "data": userManualBasePath + "DMCJG200OM000014 方向盘.htm", "type": "file"},
-	{"text": "车门", "data": userManualBasePath + "DMCJG20OM000009 车门.htm", "type": "file"},
-	{"text": "车窗", "data": userManualBasePath + "DMCJG20OM000010 车窗.htm", "type": "file"},
-	{"text": "空调系统", "data": userManualBasePath + "DMCJG20OM000004 空调系统.htm", "type": "file"},
-	{"text": "关于路边救援", "data": userManualBasePath + "DMCJG20OM000016 关于路边救援.htm", "type": "file"}
+	{"text": "内部概览", "data": userManualBasePath + "DMCJG20OM000008 内部概览.htm", "type": "file", state: {"selected": true},id: 1},
+	{"text": "方向盘", "data": userManualBasePath + "DMCJG200OM000014 方向盘.htm", "type": "file",id: 2},
+	{"text": "车门", "data": userManualBasePath + "DMCJG20OM000009 车门.htm", "type": "file",id: 3},
+	{"text": "车窗", "data": userManualBasePath + "DMCJG20OM000010 车窗.htm", "type": "file",id: 4},
+	{"text": "空调系统", "data": userManualBasePath + "DMCJG20OM000004 空调系统.htm", "type": "file",id: 5},
+	{"text": "关于路边救援", "data": userManualBasePath + "DMCJG20OM000016 关于路边救援.htm", "type": "file",id: 6}
 ];
 
 // ebook

@@ -1,37 +1,43 @@
 var hoursManualBasePath = './assets/modules/hours-manual/';
 var hoursManualData = [{
 	text: '电器',
+	id: 1,
 	data: hoursManualBasePath + "工时目录.htm",
 	state: {"opened": true, "selected": true},
 	children: [{
 		"text": "信号装置",
+		id: 2,
 		"state": {"opened": true},
 		data: hoursManualBasePath + "工时目录-1.htm",
 		"children": [{
 			"text": "高音电喇叭",
+			id: 3,
 			"state": {"opened": true},
 			data: hoursManualBasePath + "高音电喇叭.htm",
 			"children": [
-				{"text": "拆装步骤", "data": hoursManualBasePath + "高音电喇叭拆装步骤.htm", "type": "file"}
+				{"text": "拆装步骤", "data": hoursManualBasePath + "高音电喇叭拆装步骤.htm", "type": "file", id: 4}
 			]
 		}, {
 			"text": "低音电喇叭",
+			id: 5,
 			"state": {"opened": true},
 			data: hoursManualBasePath + "低音电喇叭.htm",
 			"children": [
-				{"text": "拆装步骤", "data": hoursManualBasePath + "低音电喇叭拆装步骤.htm", "type": "file"}
+				{"text": "拆装步骤", "data": hoursManualBasePath + "低音电喇叭拆装步骤.htm", "type": "file", id: 6}
 			]
 		}]
 	}, {
 		"text": "仪表装置",
+		id: 7,
 		"state": {"opened": true},
 		data: hoursManualBasePath + "工时目录-2.htm",
 		"children": [{
 			"text": "组合仪表",
+			id: 8,
 			"state": {"opened": true},
 			data: hoursManualBasePath + "组合仪表.htm",
 			"children": [
-				{"text": "拆装步骤", "data": hoursManualBasePath + "组合仪表拆装步骤.htm", "type": "file"}
+				{"text": "拆装步骤", "data": hoursManualBasePath + "组合仪表拆装步骤.htm", "type": "file", id: 9}
 			]
 		}]
 	}]
@@ -62,6 +68,18 @@ $(function () {
 			"state", "types"
 		]
 	});
+
+
+	window.onload = function () {
+		var hash = window.location.hash;
+
+		if (hash.indexOf('#node_id=' > -1)) {
+
+			var tree = $('#ebook-catalog-hours-manual').jstree(true);
+			tree.deselect_all();
+			tree.select_node(hash.replace('#node_id=', ''));
+		}
+	};
 
 	$tree.on("changed.jstree", function (e, data) {
 

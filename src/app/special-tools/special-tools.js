@@ -38,6 +38,17 @@ $(function () {
 		]
 	});
 
+	window.onload = function () {
+		var hash = window.location.hash;
+
+		if (hash.indexOf('#node_id=' > -1)) {
+
+			var tree = $('#ebook-catalog-special-tools').jstree(true);
+			tree.deselect_all();
+			tree.select_node(hash.replace('#node_id=', ''));
+		}
+	};
+
 	$tree.on("changed.jstree", function (e, data) {
 
 		if (data.selected.length) {
